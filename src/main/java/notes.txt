@@ -1,0 +1,10 @@
+A Program to demonstrate the use of @RequestMapping annotation:
+Programs:
+* AppConfig.java
+* AppInit.java
+* ApplicationController.java
+Notes:
+* The @RequestMapping annotation is used to map the web request at class and method level.
+* The @RequestMAppling annotation is used at class and method level.
+* This annotation accept eight attributes those are name, value, path, method, params, headers, consumes, produces
+
