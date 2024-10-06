@@ -15,61 +15,81 @@ public class ApplicationController {
 	
 	@RequestMapping(path = "/get", method = RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> getMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "getMethod");
-		data.put("className", "ApplicationController");
-		data.put("RequestMethodType", "GET");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "getMethod");
+			data.put("className", "ApplicationController");
+			data.put("RequestMethodType", "GET");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@RequestMapping(path = "/post", method = RequestMethod.POST)
 	public ResponseEntity<Map<String, Object>> postMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "postMethod");
-		data.put("className", "ApplicationController");
-		data.put("RequestMethodType", "POST");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "postMethod");
+			data.put("className", "ApplicationController");
+			data.put("RequestMethodType", "POST");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@RequestMapping(path = "/put", method = RequestMethod.PUT)
 	public ResponseEntity<Map<String, Object>> putMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "putMethod");
-		data.put("className", "ApplicationController");
-		data.put("RequestMethodType", "PUT");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "putMethod");
+			data.put("className", "ApplicationController");
+			data.put("RequestMethodType", "PUT");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@RequestMapping(path = "/patch", method = RequestMethod.PATCH)
 	public ResponseEntity<Map<String, Object>> patchMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "patchMethod");
-		data.put("className", "ApplicationController");
-		data.put("RequestMethodType", "PATCH");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "patchMethod");
+			data.put("className", "ApplicationController");
+			data.put("RequestMethodType", "PATCH");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@RequestMapping(path = "/delete", method = RequestMethod.DELETE)
 	public ResponseEntity<Map<String, Object>> deleteMethod() {
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "deleteMethod");
-		data.put("className", "ApplicationController");
-		data.put("RequestMethodType", "DELETE");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
-		
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "deleteMethod");
+			data.put("className", "ApplicationController");
+			data.put("RequestMethodType", "DELETE");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
